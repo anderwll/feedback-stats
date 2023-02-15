@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
   Paper,
   Table,
@@ -13,7 +13,6 @@ import {
 import { Visibility } from "@mui/icons-material";
 import { Student } from "../store/typeStore";
 import ModalStudent from "./ModalStudent";
-import { useAppSelector } from "../store/hooks";
 
 interface TableStudentsProps {
   listStudents: Array<Student>;

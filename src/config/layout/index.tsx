@@ -35,9 +35,9 @@ const LayoutDefault: React.FC<LayoutDefaultProps> = ({ componet }) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [mobileOpen, setMobileOpen] = useState(true);
 
-  const mobile = useMediaQuery("(max-width:900px)");
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
+  const mobile = useMediaQuery("(max-width:900px)");
   const modeDark = useAppSelector((state) => state.darkMode);
 
   const [mode, setMode] = useState(false);
@@ -96,7 +96,7 @@ const LayoutDefault: React.FC<LayoutDefaultProps> = ({ componet }) => {
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton onClick={() => navigate("/cadastro")}>
+          <ListItemButton onClick={() => alert("Somente na versão paga.")}>
             <ListItemIcon children={<AddCircleOutline />} />
             <ListItemText primary="Cadastar" />
           </ListItemButton>
@@ -141,7 +141,7 @@ const LayoutDefault: React.FC<LayoutDefaultProps> = ({ componet }) => {
               modeDark ? "./assets/logo-dark.png" : "./assets/logo-light.png"
             }
             alt="logo"
-            style={{ width: 45 }}
+            style={{ width: 70 }}
           />
           <div>
             <IconButton
@@ -213,13 +213,15 @@ const LayoutDefault: React.FC<LayoutDefaultProps> = ({ componet }) => {
         }}
         sx={{
           height: "100vh",
+          widht: "100vw",
           marginTop: 8.8,
           width: !mobile && mobileOpen ? "calc(100vw - 15rem)" : "100vw",
           marginLeft: !mobile && mobileOpen ? "15rem" : 0,
           background: mobile && mobileOpen ? "rgba(0,0,0, 0.6)" : "none",
           filter: mobile && mobileOpen ? "brightness(0.5)" : "none",
+          backgroundColor: modeDark ? "#18181b" : "",
           padding: mobile ? "1rem 0" : 3,
-          transition: "all .4s",
+          transition: "all .3s",
         }}
       >
         {componet}

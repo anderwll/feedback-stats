@@ -42,7 +42,7 @@ const Graphic: React.FC<GraphicProps> = ({ listQualities }) => {
         <Radar
           name="FeedbackStats"
           dataKey="nota"
-          fill="#015fe1"
+          fill="#607d8b"
           fillOpacity={0.8}
         />
       </RadarChart>

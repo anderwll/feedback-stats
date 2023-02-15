@@ -103,7 +103,12 @@ export default function GraphicDefault() {
           flexDirection: "column",
         }}
       >
-        <RadarChart cy={200} width={600} height={400} data={dadosAtualizados}>
+        <RadarChart
+          cy={mobile ? 150 : 200}
+          width={600}
+          height={mobile ? 300 : 400}
+          data={dadosAtualizados}
+        >
           <PolarGrid />
           <PolarRadiusAxis
             domain={[1, 10]}
@@ -114,7 +119,7 @@ export default function GraphicDefault() {
           <Radar
             name="FeedbackStats"
             dataKey="nota"
-            fill="#015fe1"
+            fill="#607d8b"
             fillOpacity={0.8}
           />
         </RadarChart>

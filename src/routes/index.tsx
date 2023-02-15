@@ -4,7 +4,6 @@ import LayoutDefault from "../config/layout";
 import Home from "../pages/Home";
 import ListStudents from "../pages/ListStudents";
 import Profile from "../pages/Profile";
-import Register from "../pages/Register";
 
 const AppRoutes = () => {
   return (
@@ -14,10 +13,6 @@ const AppRoutes = () => {
         <Route
           path="/lista-estudantes"
           element={<LayoutDefault componet={<ListStudents />} />}
-        />
-        <Route
-          path="/cadastro"
-          element={<LayoutDefault componet={<Register />} />}
         />
         <Route
           path="/perfil"
