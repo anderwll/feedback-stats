@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "@mui/material";
+import { Box, useMediaQuery } from "@mui/material";
 import {
   Radar,
   RadarChart,
@@ -14,6 +14,8 @@ interface GraphicProps {
 }
 
 const Graphic: React.FC<GraphicProps> = ({ listQualities }) => {
+  const mobile = useMediaQuery("(max-width:900px)");
+
   return (
     <Box
       sx={{
@@ -24,7 +26,12 @@ const Graphic: React.FC<GraphicProps> = ({ listQualities }) => {
         flexDirection: "column",
       }}
     >
-      <RadarChart cy={200} width={600} height={400} data={listQualities}>
+      <RadarChart
+        cy={200}
+        width={600}
+        height={mobile ? 300 : 350}
+        data={listQualities}
+      >
         <PolarGrid />
         <PolarRadiusAxis
           domain={[1, 10]}

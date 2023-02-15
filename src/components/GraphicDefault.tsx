@@ -96,7 +96,7 @@ export default function GraphicDefault() {
     <Box sx={{ width: "100%", display: mobile ? "block" : "flex" }}>
       <Box
         sx={{
-          width: "50%",
+          width: mobile ? "100%" : "50%",
           justifyContent: "center",
           alignItems: "center",
           display: "flex",
@@ -121,7 +121,7 @@ export default function GraphicDefault() {
       </Box>
       <Box
         sx={{
-          width: "50%",
+          width: mobile ? "100%" : "50%",
           justifyContent: "center",
           alignItems: "center",
           display: "flex",
