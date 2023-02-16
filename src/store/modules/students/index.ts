@@ -40,8 +40,6 @@ const initialState: Student[] = [
       { item: "Comunicativo", nota: 1 },
       { item: "Criativo", nota: 2 },
       { item: "Resiliente", nota: 4 },
-      { item: "Responsável", nota: 5 },
-      { item: "Proativoo", nota: 6 },
     ],
   },
   {
@@ -55,7 +53,6 @@ const initialState: Student[] = [
       { item: "Criativo", nota: 2 },
       { item: "Resiliente", nota: 8 },
       { item: "Responsável", nota: 9 },
-      { item: "Proativo", nota: 1 },
     ],
   },
 ];

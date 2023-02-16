@@ -26,6 +26,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../store/hooks";
 import { togleDarkMode } from "../../store/modules/darkMode";
+import ModalSignature from "../../components/ModalSignature";
 
 interface LayoutDefaultProps {
   componet: JSX.Element;
@@ -34,6 +35,7 @@ interface LayoutDefaultProps {
 const LayoutDefault: React.FC<LayoutDefaultProps> = ({ componet }) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const [mobileOpen, setMobileOpen] = useState(true);
+  const [modalSignature, setModalSignature] = useState(false);
 
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
@@ -62,10 +64,13 @@ const LayoutDefault: React.FC<LayoutDefaultProps> = ({ componet }) => {
     setAnchorEl(null);
   };
 
+  const handleModalSignature = () => {
+    setModalSignature(!modalSignature);
+  };
+
   const handleMode = () => {
     setMode(!mode);
     dispatch(togleDarkMode(mode));
-    console.log(mode);
   };
 
   const drawer = (
@@ -96,7 +101,7 @@ const LayoutDefault: React.FC<LayoutDefaultProps> = ({ componet }) => {
           </ListItemButton>
         </ListItem>
         <ListItem disablePadding>
-          <ListItemButton onClick={() => alert("Somente na versão paga.")}>
+          <ListItemButton onClick={handleModalSignature}>
             <ListItemIcon children={<AddCircleOutline />} />
             <ListItemText primary="Cadastar" />
           </ListItemButton>
@@ -179,7 +184,7 @@ const LayoutDefault: React.FC<LayoutDefaultProps> = ({ componet }) => {
                   handleClose();
                 }}
               >
-                Perfil
+                Conta
               </MenuItem>
             </Menu>
           </div>
@@ -226,6 +231,10 @@ const LayoutDefault: React.FC<LayoutDefaultProps> = ({ componet }) => {
       >
         {componet}
       </Box>
+      <ModalSignature
+        isOpen={modalSignature}
+        handleClose={handleModalSignature}
+      />
     </>
   );
 };

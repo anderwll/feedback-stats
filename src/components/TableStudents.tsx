@@ -29,7 +29,7 @@ const TableStudents: React.FC<TableStudentsProps> = ({ listStudents }) => {
 
   return (
     <Grid container paddingX={3} justifyContent={"center"} marginTop={4}>
-      <Grid xs={12}>
+      <Grid item xs={12}>
         <TableContainer component={Paper}>
           <Table sx={{ minWidth: "100%" }} aria-label="simple table">
             <TableHead>
