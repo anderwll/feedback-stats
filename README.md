@@ -1,6 +1,6 @@
 # Feed Back Stats
 
-Projeto desenvolvido com o intuito de demostrar atraves de estatus as habilidades do alunos.
+Este sistema tem como finalidade demonstrar de forma gráfica as capacidades do indíviduo a ser avaliado.
 
 ## Squad
 
