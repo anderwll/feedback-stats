@@ -25,7 +25,7 @@ export default function GraphicDefault() {
   const [valor4, setValor4] = useState(5);
   const [valor5, setValor5] = useState(6);
 
-  const mobile = useMediaQuery("(max-width:900px)");
+  const mobile = useMediaQuery("(max-width:1000px)");
 
   const handleChange1 = (e: any) => {
     const newValor1 = Number(e.target.value);

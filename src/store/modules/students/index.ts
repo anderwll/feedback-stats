@@ -9,11 +9,10 @@ const initialState: Student[] = [
     course: "FullStack Web Developer",
     imgUrl: "https://avatars.githubusercontent.com/u/102523593?v=4",
     qualities: [
-      { item: "Comunicativo", nota: 3 },
-      { item: "Criativo", nota: 2 },
-      { item: "Resiliente", nota: 8 },
-      { item: "Responsável", nota: 4 },
-      { item: "Proativo", nota: 2 },
+      { item: "Comunicativo", nota: 8 },
+      { item: "Criativo", nota: 7 },
+      { item: "Responsável", nota: 10 },
+      { item: "Proativo", nota: 9 },
     ],
   },
   {
@@ -24,9 +23,9 @@ const initialState: Student[] = [
     imgUrl: "https://avatars.githubusercontent.com/u/109244769?v=4",
     qualities: [
       { item: "Comunicativo", nota: 8 },
-      { item: "Criativo", nota: 3 },
-      { item: "Resiliente", nota: 4 },
-      { item: "Responsável", nota: 8 },
+      { item: "Criativo", nota: 10 },
+      { item: "Resiliente", nota: 8 },
+      { item: "Responsável", nota: 5 },
       { item: "Provativo", nota: 7 },
     ],
   },
@@ -37,9 +36,9 @@ const initialState: Student[] = [
     course: "FullStack Web Developer",
     imgUrl: "https://avatars.githubusercontent.com/u/106688496?v=4",
     qualities: [
-      { item: "Comunicativo", nota: 1 },
-      { item: "Criativo", nota: 2 },
-      { item: "Resiliente", nota: 4 },
+      { item: "Comunicativo", nota: 10 },
+      { item: "Criativo", nota: 10 },
+      { item: "Resiliente", nota: 7 },
     ],
   },
   {
@@ -49,10 +48,10 @@ const initialState: Student[] = [
     course: "FullStack Web Developer",
     imgUrl: "https://avatars.githubusercontent.com/u/85909559?v=4",
     qualities: [
-      { item: "Comunicativo", nota: 4 },
-      { item: "Criativo", nota: 2 },
-      { item: "Resiliente", nota: 8 },
-      { item: "Responsável", nota: 9 },
+      { item: "Comunicativo", nota: 9 },
+      { item: "Criativo", nota: 7 },
+      { item: "Resiliente", nota: 3 },
+      { item: "Responsável", nota: 6 },
     ],
   },
 ];

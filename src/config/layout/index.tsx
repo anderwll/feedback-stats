@@ -39,7 +39,7 @@ const LayoutDefault: React.FC<LayoutDefaultProps> = ({ componet }) => {
 
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
-  const mobile = useMediaQuery("(max-width:900px)");
+  const mobile = useMediaQuery("(max-width: 900px)");
   const modeDark = useAppSelector((state) => state.darkMode);
 
   const [mode, setMode] = useState(false);
