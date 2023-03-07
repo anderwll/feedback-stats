@@ -14,7 +14,7 @@ Desenvolvido por:
   
 ![feedback](https://user-images.githubusercontent.com/102523593/223396411-ad2a8116-3f95-4c8f-95d7-f45793197846.JPG)
 
-##
+## Teachers
 
 Liderado pela nossa mentora: 
   <li> Carolina Di Lorenzo </li>
