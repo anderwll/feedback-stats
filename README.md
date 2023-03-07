@@ -18,6 +18,8 @@ Desenvolvido por:
 
 Liderado pela nossa mentora: 
   <li> Carolina Di Lorenzo </li>
+  
+</br>
 
 Professores Tech:
   <li> Letícia Leal </li>
