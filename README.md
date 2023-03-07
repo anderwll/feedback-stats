@@ -1,6 +1,6 @@
 # Feed Back Stats
 
-Este sistema tem como finalidade demonstrar de forma gráfica as capacidades do indíviduo a ser avaliado.
+<h3>Este sistema tem como finalidade demonstrar de forma gráfica as capacidades do indíviduo a ser avaliado.</h3>
 
 ## Squad
 
