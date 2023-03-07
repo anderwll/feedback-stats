@@ -5,8 +5,8 @@ Projeto desenvolvido com o intuito de demostrar atraves de estatus as habilidade
 ## Squad
 
 Desenvolvido por: 
-  Anderson Wilmsen
-  Anderson Exner
-  Douglas Souza 
-  José Pedro
+  <li> Anderson Wilmsen </li>
+  <li> Anderson Exner </li>
+  <li> Douglas Souza </li>
+  <li> José Pedro </li>
 
