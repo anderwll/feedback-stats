@@ -4,6 +4,8 @@ export interface Student {
   age: number;
   course: string;
   imgUrl: string;
+  linkLinkedin: string;
+  linkGithub: string;
   qualities: Array<Qualities>;
 }
 

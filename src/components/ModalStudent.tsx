@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Box, Modal, Typography, useMediaQuery, Button } from "@mui/material";
-import { Close } from "@mui/icons-material";
+import { Close, LinkedIn, GitHub } from "@mui/icons-material";
 import { useAppSelector } from "../store/hooks";
 import { Student } from "../store/typeStore";
 import Graphic from "./Graphic";
@@ -83,6 +83,25 @@ const ModalStudent: React.FC<ModalStudentProps> = ({
             <Typography variant="h6">{student?.age}</Typography>
             <Typography variant="caption">Curso de formação</Typography>
             <Typography variant="h6">{student?.course}</Typography>
+            <Typography variant="caption">Redes sociais</Typography>
+            <Box>
+              <Button
+                variant="text"
+                color="inherit"
+                href={student?.linkLinkedin as string}
+                target="_blank"
+              >
+                <LinkedIn sx={{ fontSize: 30 }} />
+              </Button>
+              <Button
+                variant="text"
+                color="inherit"
+                href={student?.linkGithub as string}
+                target="_blank"
+              >
+                <GitHub sx={{ fontSize: 30 }} />
+              </Button>
+            </Box>
           </Box>
         </Box>
         <Box

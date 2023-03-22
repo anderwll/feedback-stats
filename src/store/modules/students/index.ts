@@ -8,11 +8,12 @@ const initialState: Student[] = [
     age: 24,
     course: "FullStack Web Developer",
     imgUrl: "https://avatars.githubusercontent.com/u/102523593?v=4",
+    linkLinkedin: "https://www.linkedin.com/in/anderson-wilmsen-675a48218/",
+    linkGithub: "https://github.com/anderwll",
     qualities: [
-      { item: "Comunicativo", nota: 8 },
-      { item: "Criativo", nota: 7 },
-      { item: "Responsável", nota: 10 },
-      { item: "Proativo", nota: 9 },
+      { item: "Proativo", nota: 10 },
+      { item: "Organizado", nota: 9 },
+      { item: "Ágil", nota: 10 },
     ],
   },
   {
@@ -21,12 +22,12 @@ const initialState: Student[] = [
     age: 34,
     course: "FullStack Web Developer",
     imgUrl: "https://avatars.githubusercontent.com/u/109244769?v=4",
+    linkLinkedin: "https://www.linkedin.com/in/anderson-exner-00466a174/",
+    linkGithub: "https://github.com/AndersonExner",
     qualities: [
-      { item: "Comunicativo", nota: 8 },
-      { item: "Criativo", nota: 10 },
-      { item: "Resiliente", nota: 8 },
-      { item: "Responsável", nota: 5 },
-      { item: "Provativo", nota: 7 },
+      { item: "Esforçado", nota: 10 },
+      { item: "Resiliente", nota: 10 },
+      { item: "Provativo", nota: 8 },
     ],
   },
   {
@@ -35,10 +36,12 @@ const initialState: Student[] = [
     age: 33,
     course: "FullStack Web Developer",
     imgUrl: "https://avatars.githubusercontent.com/u/106688496?v=4",
+    linkLinkedin: "https://www.linkedin.com/in/douglas-souza-src-4b4a95265/",
+    linkGithub: "https://github.com/douglassouza-src",
     qualities: [
-      { item: "Comunicativo", nota: 10 },
       { item: "Criativo", nota: 10 },
-      { item: "Resiliente", nota: 7 },
+      { item: "Responsável", nota: 9 },
+      { item: "Paciente", nota: 10 },
     ],
   },
   {
@@ -47,11 +50,13 @@ const initialState: Student[] = [
     age: 25,
     course: "FullStack Web Developer",
     imgUrl: "https://avatars.githubusercontent.com/u/85909559?v=4",
+    linkLinkedin:
+      "https://www.linkedin.com/in/jos%C3%A9-pedro-baungratz-879a47181/",
+    linkGithub: "https://github.com/josepedrobaun",
     qualities: [
-      { item: "Comunicativo", nota: 9 },
-      { item: "Criativo", nota: 7 },
-      { item: "Resiliente", nota: 3 },
-      { item: "Responsável", nota: 6 },
+      { item: "Comunicativo", nota: 10 },
+      { item: "Comprometido", nota: 9 },
+      { item: "Esforçado", nota: 10 },
     ],
   },
 ];
